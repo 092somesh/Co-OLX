@@ -1,0 +1,32 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing : border-box;
+    
+    color: rgb(0, 0, 0);
+}
+
+.body{
+    display: block;
+   
+    background-color: #cce8ee;
+    background-repeat: no-repeat;
+    background-size:100% 100vh;
+    height: 100vh;
+    width: 100%;
+    position: relative;
+}
+
+.photos{
+    text-align: left;
+    width: -50%;
+    padding: 30px 50px;
+    height: 90%;
+    
+}
+
+.desc{
+    text-align: left;
+    width: 50%;
+    
+}

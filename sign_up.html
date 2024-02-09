@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Co-oLX_sign_up</title>
+    <link rel="icon" type="image/png" href="SMLOGO.jpeg">
+    <link rel="stylesheet" href="sign_up.css">
+</head>
+<body>
+    <div class="body">
+        <img id="background" src="image/greet1.png" alt="co-olx">
+        <div class="login">
+            <h1><img  width="60px" height="55px" src="SMLOGO.jpeg" alt="Co-oLX">Signup Form</h1>
+            <form method="" action="hm.html">
+                <div class="inputbox">
+                    <input type="text" name="username" autocomplete="off" required>
+                    <label >USERNAME*</label>
+                    
+                </div>
+                <div class="inputbox">
+                    <input type="text" name="webmail" autocomplete="off" required>
+                    <label >WEBMAIL*</label>
+                    
+                </div>
+                <div class="inputbox">
+                    <input type="text" name="course" autocomplete="off" required>
+                    <label >COURSE*</label>
+                    
+                </div>
+                <div class="inputbox">
+                    <input type="text" name="address" autocomplete="off" required>
+                    <label >ADDRESS*</label>
+                    
+                </div>
+                <div class="inputbox">
+                    <input type="text" name="mobile" autocomplete="off" required>
+                    <label >MOBILE NO.*</label>
+                    
+                </div>
+                <div class="inputbox">
+                    <input type="password" name="password" autocomplete="off" required>
+                    <label >PASSWORD*</label>
+                </div>
+                <div class="inputbox">
+                    <input type="password" name="password_check" autocomplete="off" required>
+                    <label >COMFIRM PASSWORD* </label>
+                </div>
+                <input id="log_button" onclick= "otp()" type="submit" name="" value="Sign Up" >
+                <br><br>
+                
+                
+            </form>
+            <p>OTP  will be sent on your Webmail ID</p>
+        </div>
+        <script >
+                function otp()
+                {
+                    var x=window.prompt("CONFIRM OTP");
+                    
+                }
+        </script>
+    </div
+</body>
+</html>

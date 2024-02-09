@@ -1,0 +1,102 @@
+.body{
+    background-position: 50%;
+    filter: blur(30);
+}
+
+
+.form{
+    opacity: 90%;
+    margin-left:12%;
+    margin-right: 12%;
+    margin-top: 5%;
+    margin-bottom: 8%;
+    border-style: solid;
+    border-width: 10px;
+    border-color: rgb(33 71 112);
+    background-color: rgb(255, 255, 255);
+    padding: 20px 50px;
+    border-radius: 10px;
+    font-size: 25px;
+    font-weight: 500;
+    font-style:normal;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    border-spacing: 20px;
+}
+
+.form h1{
+    text-align: center;
+}
+
+
+
+#navbarSupportedContent{
+    font-size: 23px;
+  }
+  #dropdown{
+    font-size: 20px ;
+  }
+  .nav{
+    margin: 0px 20px;
+  }
+  .carousel-inner{
+    height: 45vh;
+  }
+  .form-inline{
+    margin-left: 400px;
+    margin-right: 10px;
+    line-height: 30px;
+  }
+  .template-demo{
+    float: right;
+    margin-left: 10px;
+  } 
+.center_button{
+  text-align: center;
+  
+}
+  
+.button{
+  
+  background-color: rgb(43, 127, 216);
+  border: 0;
+  border-radius: 56px;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: system-ui,-apple-system,system-ui,"Segoe UI",Roboto,Ubuntu,"Helvetica Neue",sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  outline: 0;
+  padding: 6px 100px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  transition: all .3s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  
+ 
+}
+
+.sub_button{
+  background-color: transparent;
+  border: none;
+  color: #fff;
+}
+.button:hover {
+  background-color: rgb(33 71 112);
+  opacity: 1;
+  transform: translateY(0);
+  transition-duration: .35s;
+}
+
+.button:active {
+  transform: translateY(2px);
+  transition-duration: .35s;
+}
+
+.button:hover {
+  box-shadow: rgba(39, 174, 96, .2) 0 6px 12px;
+}
+ 

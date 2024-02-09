@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Co-oLX_Feedback</title>
+    <link rel="icon" type="image/png" href="SMLOGO.jpeg">
+    <link rel="stylesheet" href="feedback.css">
+</head>
+<body>
+    
+    <img id="back" src="image/greet1.png" alt="co-olx">
+    <div class="container">
+        
+        <div class="box">
+            <h1>RATE</h1>
+            <h1>YOUR EXPERIENCE</h1>
+            <div class="star">
+                <input type="radio" name="rate" id="rate-5" >
+                <label for="rate-5" class="fas fa-star"></label>
+                
+                <input type="radio" name="rate" id="rate-4" >
+                <label for="rate-4" class="fas fa-star"></label>
+                
+                <input type="radio" name="rate" id="rate-3" >
+                <label for="rate-3" class="fas fa-star"></label>
+                
+                <input type="radio" name="rate" id="rate-2" >
+                <label for="rate-2" class="fas fa-star"></label>
+                
+                <input type="radio" name="rate" id="rate-1" >
+                <label for="rate-1" class="fas fa-star"></label>
+            </div>
+            <br>
+            <p>Your Feedback :-</p>
+            <textarea name="comments" id="feed" cols="30" rows="10" placeholder="Type here..."></textarea>
+            <div class="submit">
+                <input onclick="thanks()" id="feed_submission" type="submit" name="feed_submit" value="Submit" >
+
+            </div>
+       </div>
+    </div>
+    <script >
+        function thanks()
+        {
+            window.alert("Thank you for your Feedback.");
+        }
+</script>
+</body>
+</html>

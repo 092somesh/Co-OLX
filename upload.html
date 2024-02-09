@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Co-oLX | Upload item</title>
+    <link rel="stylesheet" href="upload.css">
+    <link rel="icon" type="image/png" href="SMLOGO.jpeg">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+    integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF"
+    crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Overpass:wght@300&display=swap" rel="stylesheet">
+</head>
+<body background="image/upload.png" >
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#"><img height="50px" width="50px" src="SMLOGO.jpeg" alt="CO-oLX"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a style="color: rgb(8, 8, 8);" class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-expanded="false">
+                        Category
+                    </a>
+                    <div class="dropdown-menu" id="dropdown" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">Cycle</a>
+                        <a class="dropdown-item" href="#">Books/Notes</a>
+                        <a class="dropdown-item" href="#">Appliances</a>
+                        <a class="dropdown-item" href="#">Accessories</a>
+                        <a class="dropdown-item" href="#">Sports</a>
+                        <a class="dropdown-item" href="#">Lab Stuff</a>
+                        <a class="dropdown-item" href="#">Others</a>
+                    </div>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">About <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="feedback.html">Feedback <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item active" style="margin-top: 6px;">
+                    <form class="form-inline my-2 my-lg-0">
+                        <input class="form-control mr-sm-2" type="search" placeholder="Type here..."
+                            aria-label="Search">
+                        <button  class="btn btn-outline-dark" type="submit">Search</button>
+                    </form>
+                </li>
+                <li class="nav-item dropdown">
+                    <a style="color: rgb(8, 8, 8);" class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-expanded="false">
+                        Account
+                    </a>
+                    <div class="dropdown-menu" id="dropdown" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">View</a>
+                        <a class="dropdown-item" href="#">Sell</a>
+                        <hr>
+                        <a class="dropdown-item" href="#">Logout</a>
+                    </div>
+                </li>
+            </ul>
+
+
+
+        </div>
+    </nav>
+
+    <div class="form">
+        <div class="">
+            <h1 access="false" id="control-9454635">Enter your product's detail:</h1></div><hr style="height:5px; width:80%; color:black;" ><br>
+        <div class="label">
+            <label for="title" class="formbuilder-text-label">Title<span class="formbuilder-required">*</span></label>
+            <input type="text" placeholder="Name of your product" class="form-control" name="title" access="false" maxlength="30" id="title" required="required" aria-required="true">
+        </div><br>
+        <div class="label">
+            <label for="descr" class="formbuilder-textarea-label">Description</label>
+            <textarea type="textarea" placeholder="Describe your product" class="form-control" name="descr" access="false" maxlength="300" rows="5" id="descr"></textarea>
+        </div><br>
+        <div class="label">
+            <label for="category" class="formbuilder-select-label">Select category<span class="formbuilder-required">*</span></label>
+            <select class="form-control" name="category" id="category" required="required" aria-required="true">
+                <option disabled="null" selected="null">Choose one of the category</option>
+                <option value="books" id="category-0">Books/Notes</option>
+                <option value="cycle" id="category-1">Cycle</option>
+                <option value="electronics" id="category-2">Electronics</option>
+                <option value="appliances" id="category-3">Appliances</option>
+                <option value="lab" id="category-4">Lab Equipment</option>
+                <option value="sports" id="category-5">Sports</option>
+                <option value="other" id="category-6">Other</option>
+            </select>
+        </div><br>
+        <div class="label">
+            <label for="price" class="formbuilder-number-label">Price<span class="formbuilder-required">*</span></label>
+            <input type="number" placeholder="0" class="form-control" name="price" access="false" min="0" step="10" id="price" required="required" aria-required="true">
+        </div><br>
+        <div class="label">
+            <label for="photo" class="formbuilder-file-label">Image Upload<span class="formbuilder-required">*</span></label>
+            <input type="file" placeholder="upload photos" class="form-control" name="photo[]" access="false" multiple="true" id="photo" required="required" aria-required="true">
+        </div><br>
+        <div class="center_button">
+        <div class="button">
+            <button type="button" class="sub_button" name="submit" onclick= "add()" access="false"  id="submit">ADD PRODUCT</button>
+        </div></div>
+       
+    </div>
+    <script >
+        function add()
+        {
+            window.alert("Product added Successfully");
+            
+        }
+</script>
+</body>
+
+<footer>
+    <footer class="text-center text-lg-start bg-light text-muted">
+        <!-- Section: Social media -->
+        <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+            <!-- Left -->
+            <div class="me-5 d-none d-lg-block">
+                <span style="line-height: 35px;">Get connected with us on social networks:</span>
+
+                <div class="template-demo">
+                    <button type="button" style="color: blue;" class="btn btn-social-icon btn-outline-facebook"><i
+                            class="fa fa-facebook"></i></button>
+                    <button type="button" style="color: deepskyblue;" class="btn btn-social-icon btn-outline-twitter"><i
+                            class="fa fa-twitter"></i></button>
+                    <button type="button" style="color: rgb(0, 0, 105);" class="btn btn-social-icon btn-outline-linkedin"><i
+                            class="fa fa-linkedin"></i></button>
+                    <button type="button" style="color: rgb(255, 0, 179);" class="btn btn-social-icon btn-outline-instagram"><i
+                            class="fa fa-instagram"></i></button>
+                </div>
+
+                <!-- Right -->
+        </section>
+        <!-- Section: Social media -->
+
+        <!-- Section: Links  -->
+        <section class="">
+            <div class="container text-center text-md-start mt-5">
+                <!-- Grid row -->
+                <div class="row mt-3">
+                    <!-- Grid column -->
+                    <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                        <!-- Content -->
+                        <h6 class="text-uppercase fw-bold mb-4">
+                            <i class="fas fa-gem me-3"></i>National Institute of Technology, Trichy
+                        </h6>
+                        <p>
+                            NIRF 2021 - First among NITs, Ninth in Engineering.... NIT-T appointed as the National MOOCs
+                            Coordinator for offering Engineering Courses at UG & PG level
+                        </p>
+                    </div>
+                    <!-- Grid column -->
+
+                    <!-- Grid column -->
+                    <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                        <!-- Links -->
+                        <h6 class="text-uppercase fw-bold mb-4">
+                            Category
+                        </h6>
+                        <p>
+                            <a href="#!" class="text-reset">Cycle</a>
+                        </p>
+                        <p>
+                            <a href="#!" class="text-reset">Books/Notes</a>
+                        </p>
+                        <p>
+                            <a href="#!" class="text-reset">Appliances</a>
+                        </p>
+                        <p>
+                            <a href="#!" class="text-reset">Sports</a>
+                        </p>
+                        <p>
+                            <a href="#!" class="text-reset">Lab Stuff</a>
+                        </p>
+                        <p>
+                            <a href="#!" class="text-reset">Others</a>
+                        </p>
+                    </div>
+                    <!-- Grid column -->
+
+                    <!-- Grid column -->
+                    <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+                        <!-- Links -->
+                        <h6 class="text-uppercase fw-bold mb-4">
+                            Useful links
+                        </h6>
+                        <p>
+                            <a href="#!" class="text-reset">Pricing</a>
+                        </p>
+                        <p>
+                            <a href="#!" class="text-reset">Settings</a>
+                        </p>
+                        <p>
+                            <a href="#!" class="text-reset">Orders</a>
+                        </p>
+                        <p>
+                            <a href="#!" class="text-reset">Help</a>
+                        </p>
+                        <p>
+                            <a href="#!" class="text-reset">Customer Care</a>
+                        </p>
+                    </div>
+                    <!-- Grid column -->
+
+                    <!-- Grid column -->
+                    <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                        <!-- Links -->
+                        <h6 class="text-uppercase fw-bold mb-4">
+                            Contact
+                        </h6>
+                        <p><i class="fas fa-home me-3"></i> Rishabh Gujetiya : 9098196544</p>
+                        <p>
+                        <p><i class="fas fa-home me-3"></i> Riteh Singh : 6206599608
+                        </p>
+                        <p>
+                        <p><i class="fas fa-home me-3"></i> Ritesh Kumar Singh : 8750056425
+                        </p>
+                        <p></p>
+                        <p><i class="fas fa-home me-3"></i> Somesh Harsule : 9752970628
+                        </p>
+                        <p></p>
+                        <p><i class="fas fa-home me-3"></i> Yukta Sai: 7000931366
+                        </p>
+                        <p></p>
+
+                        </p>
+                        <i class="fas fa-envelope me-3"></i>
+                        Co-oLX@gmail.com
+                        </p>
+                    </div>
+                    <!-- Grid column -->
+                </div>
+                <!-- Grid row -->
+            </div>
+        </section>
+        <!-- Section: Links  -->
+
+        <!-- Copyright -->
+        <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+            © 2022 Copyright MCA'24:
+            <a class="text-reset fw-bold" href="https://mdbootstrap.com/">Co-oLX.com</a>
+        </div>
+        <!-- Copyright -->
+    </footer>
+
+</html>

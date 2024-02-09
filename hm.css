@@ -1,0 +1,34 @@
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Overpass', sans-serif;
+}
+#navbarSupportedContent{
+  font-size: 23px;
+}
+#dropdown{
+  font-size: 20px ;
+}
+.nav{
+  margin: 0px 20px;
+}
+.carousel-inner{
+  height: 45vh;
+}
+.form-inline{
+  margin-left: 400px;
+  margin-right: 10px;
+  line-height: 30px;
+}
+.template-demo{
+  float: right;
+  margin-left: 10px;
+} 
+ @media only screen and (max-width:1000px) { 
+  .form-inline{
+    margin-left: 0;
+  }
+}  
+  
